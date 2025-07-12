@@ -1,0 +1,47 @@
+npm init
+
+npm i express@4.18.1
+npm i sqlite3@5.0.9
+npm i knex@2.1.0
+npm i body-parser@1.19.0
+npm i cors@2.8.5
+npm i dotenv@16.4.5
+
+npm i cookie-parser@1.4.6
+npm i bcryptjs@2.4.3
+npm i jsonwebtoken@9.0.2
+
+
+npm i nodemon -D
+npm i moment
+
+npm i nodemailer
+npm i multer
+
+
+
+
+
+
+
+
+
+https://knexjs.org/guide/query-builder.html#knex
+
+Install PM2: npm install -g pm2
+Start the backend: pm2 start server.js
+
+-------------------------------------------------------
+
+…or create a new repository on the command line
+echo "# service-stock-api" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rpajany/service-stock-api.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/rpajany/service-stock-api.git
+git branch -M main
+git push -u origin main
