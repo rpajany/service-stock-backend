@@ -51,9 +51,9 @@ async function signIn(req, res) {
             // true for Production & false for Development / secure: process.env.NODE_ENV === 'production', // Only secure in production
             const tokenOption = {
                 httpOnly: true, // Prevents client-side JavaScript access
-                // secure: true  // Ensures the cookie is sent over HTTPS
-                //sameSite: 'Strict', // Protects against CSRF
-                secure: process.env.NODE_ENV === 'production', // Secure in production only
+                secure: true,  // Ensures the cookie is sent over HTTPS
+                sameSite: 'none', // "Strict" Protects against CSRF
+               // secure: process.env.NODE_ENV === 'production', // Secure in production only
             }
 
             // save json web token in user cookie and send res.data
